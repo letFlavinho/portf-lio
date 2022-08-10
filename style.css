@@ -1,0 +1,131 @@
+:root{
+    --cor-letras: #837E9F;
+    --cor-tech: #CB92B1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+body{
+    
+    background-color: #22212C;
+}
+/* começo da estilização da div profile*/
+.profile h1{
+    padding-top: 15px;
+    font-size:x-large;
+    color: var(--cor-letras);
+}
+.profile span{
+    font-size: small;
+    color: var(--cor-letras);
+}
+.profile{  
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5%;
+    background-color: #302F3D;
+    margin: 35px;
+    width: 100%;
+    max-width: 348px;
+    padding: 35px;
+    text-align: center;
+
+}
+.profile img{
+    
+    border: 2px solid #00FF00;
+    max-width: 100px;
+    width: 100%;
+    border-radius: 50%;
+}
+/* fim da estilização da div profile */
+svg{
+    color: #837E9F;
+}
+.links{
+    
+    
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5%;
+    background-color: #302F3D;
+    padding: 20px;
+    margin-left: 35px;
+    width: 100%;   
+    max-width: 348px;
+    
+}
+.links a, .links span{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--cor-letras);
+    margin-left: 10px;
+    
+}
+.links svg{
+    margin: 8px;
+    vertical-align: middle;
+}
+
+
+    
+    
+.technologies{
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5%;
+    background-color: #302F3D;
+    padding: 35px;
+    margin-left: 35px;
+    width: 100%;   
+    max-width: 348px;
+    margin-top: 35px;
+   
+    
+    
+}
+/* estilização da div technologies */
+
+
+.technologies .tech-grid{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+    
+
+}
+.technologies .box-tech{
+    width: 25%;
+    text-align: center;
+    background-color: var(--cor-tech);
+    border-radius: 25px;
+    margin: 5px;
+}
+    
+div .technologies h2{
+    color: var(--cor-letras);
+}
+.technologies .tech-grid .box-tech span{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 10px;
+   
+    
+    
+
+}
+/* media queries */
+@media screen and (max-width: 500px) {
+    .profile, .links, .technologies{
+        max-width: calc(100% - 70px);
+        
+        
+    }
+    
+}
